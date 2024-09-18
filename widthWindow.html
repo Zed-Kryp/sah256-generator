@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>SHA256 Generator</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section>
-        <div class="title1">
-            <p class="style-text">SHA256</p>
-            <p class="style-text">GENERATOR</p>
-        </div>
-        <div class="sahhead">
-            <input type="text" id="inputText" name="inputText" placeholder="Enter your plain text" oninput="hideOutput()">
-            <input type="file" id="inputFile" name="inputFile" oninput="hideOutput()">
-        </div>
-        <button onclick="generateHash()">GENERATE</button>
-        <div id="out">
-            <p id="hashOutput"></p><br>
-            <button onclick="saveHash()">Save Hash</button>
-        </div>
+      <div class="title1">
+        <p class="style-text">SHA256</p>
+        <p class="style-text">GENERATOR</p>
+      </div>
+      <div class="sahhead">
+        <input
+          type="text"
+          id="inputText"
+          name="inputText"
+          placeholder="Enter your plain text"
+          oninput="hideOutput()"
+        />
+        <input
+          type="file"
+          id="inputFile"
+          name="inputFile"
+          oninput="hideOutput()"
+        />
+      </div>
+      <button onclick="generateHash()">GENERATE</button>
+      <div id="out">
+        <p>Your Hashed Value is:</p>
+        <p id="hashOutput"></p>
+        <br />
+        <button onclick="saveHash()">Save Hash</button>
+      </div>
     </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
